@@ -1,0 +1,10 @@
+lexer fonksiyonu  ekrana bir sey basmaz. Sadece token lari olusturup token listesi return eder.
+
+Token lari tipleriyle birlikte ("deffun -> identifier" gibi) sirali sekilde ekrana basmak için tokensPrint  fonksiyonu yazildi.
+
+lexer da tokensPrint fonksiyonu da parametre olarak dosya adini içeren string alir. Dosya bulunamazsa NIL döner.
+
+Varsayilan dosya ismi  "test.coffee" dir. Farkli dosya ile test gerçeklestirmek için .cl dosyasinin en alt satirindaki fonksiyon çagrisindaki stringi degistirilmeli
+veya REPL'de fonksiyon çagirirken dosya ismi verilmeli.
+
+Program Load edilirken  tokensPrint fonksiyonu test.coffee  dosyasini çalistiracak sekilde yazilmistir.
